@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+}
+p{
+  display: inline;
+}
+body{
+  max-width: 960px;
+  margin: 64px auto 0;
+  padding: 0 12px;
+}
+
+header h1{
+  font-weight: 600;
+  font-size: 36px;
+  display: inline;
+  color: #4E5150;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 1fr 383px;
+  gap: 113px;
+}
+
+form{
+  display: grid;
+  max-width: 100%;
+}
+form h2{
+  font-weight: 600;
+  font-size: 18px;
+  color: #333333;
+  
+  margin: 50px 0 7px;
+}
+label h3{
+  color: #4F4F4F;
+  font-weight: 600;
+  font-size: 12px;
+
+  margin: 7px 0;
+}
+form div{
+  margin-bottom: 13px;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #828282;
+
+  display: flex;
+  gap: 14px;
+  width: 100%;
+}
+form span{
+  color: #828282;
+  width: auto;
+}
+form div input,  select{
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  color: #333333;
+}
+form div input:focus, select:focus{
+  outline: none;
+}
+form div input::placeholder{
+  color: #828282;
+}
+form section{
+  display: flex;
+  gap: 31px;
+}
+form label p:last-child{
+  margin-left: 10px;
+}
+form input[type=checkbox]{
+  width: auto;
+  filter: invert(20%) hue-rotate(180deg) brightness(1.35);
+}
+form button{
+  width: auto;
+  display: block;
+  border: none;
+  background-color: #F2994A;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 17px 45px;
+  border-radius: 12px;
+  justify-self: end;
+  margin-top: 24px;
+}
+aside{
+  background-color: #F2F2F2;
+  padding: 30px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 95px;
+  height: min-content;
+}
+aside img{
+  border-radius: 13px;
+  width: 135px;
+  height: 135px;
+}
+aside div{
+  display: flex;
+  gap: 20px;
+}
+aside section{
+  display: grid;
+}
+aside section div:first-child{
+  flex-direction: column;
+  gap: 0px;
+}
+.cost{
+  /* background-color: violet; */
+  gap: 10px;
+}
+.cost p:first-child{
+  color: #F2994A;
+  font-weight: 600;
+}
+.quantity{
+  /* background -color: aqua; */
+  height: 52px;
+  width: 134px;
+  padding: 16px 13px;
+  border-radius: 12px;
+  border: 1px solid #828282;
+  
+  display: flex;
+  /* grid-template-columns: repeat(3, 1fr); */
+  justify-content:space-between;
+}
+.quantity button{
+  border: none;
+  background-color: #E0E0E0;
+  color: #828282;
+  border-radius: 4px;
+  width: 18px;
+}
+.quantity P{
+  text-align: center;
+}
+aside article{
+  display: grid;
+  gap: 32px;
+}
+aside section{
+  display: grid;
+  gap: 10px;
+}
+aside section div{
+  display: flex;
+  justify-content: space-between;
+}
+aside p:nth-child(2){
+  text-align: end;
+}
+footer{
+  text-align: center;
+  margin: 60px auto 10px;
+}
+
+@media (max-width:775px){
+  main{
+    grid-template-columns: auto;
+    gap: 12px;
+  }
+  aside{
+    grid-row: 1 / 2;
+    margin-top: 21px;
+  }
+  
+  form div input,  select{
+    font-size: 12px;
+  }
+  form div{
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    gap: 10px;
+  }
+  form button{
+    margin-top: 20px;  
+  }
+}
